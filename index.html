@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin Dashboard</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/css/dash.css">
+    <link rel="stylesheet" href="/css/index.css" />
+  </head>
+  <body>
+    <div class="container">
+      <!-- Sidebar -->
+      <div class="sidebar">
+        <div class="logo">
+          <h1>Admin<span>Panel</span></h1>
+        </div>
+        <div class="nav-menu">
+          <div class="menu-heading">Main</div>
+          <div class="nav-item active">
+            <i class="fas fa-chart-pie"></i>
+            <span>Dashboard</span>
+          </div>
+          <div class="nav-item">
+            <i class="fas fa-users"></i>
+            <span>Users</span>
+          </div>
+          <div class="nav-item">
+            <i class="fas fa-box"></i>
+            <span>Products</span>
+          </div>
+          <div class="nav-item">
+            <i class="fas fa-shopping-cart"></i>
+            <span>Orders</span>
+          </div>
+
+          <div class="menu-heading">Reports</div>
+          <div class="nav-item">
+            <i class="fas fa-chart-line"></i>
+            <span>Analytics</span>
+          </div>
+          <div class="nav-item">
+            <i class="fas fa-coins"></i>
+            <span>Sales</span>
+          </div>
+
+          <div class="menu-heading">Admin</div>
+          <div class="nav-item">
+            <i class="fas fa-cog"></i>
+            <span>Settings</span>
+          </div>
+          <div class="nav-item">
+            <i class="fas fa-bell"></i>
+            <span>Notifications</span>
+          </div>
+          <div class="nav-item">
+            <i class="fas fa-shield-alt"></i>
+            <span>Security</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Header -->
+      <div class="header">
+        <div class="search-bar">
+          <i class="fas fa-search"></i>
+          <input type="text" placeholder="Search..." />
+        </div>
+        <div class="header-actions">
+          <div class="notification">
+            <i class="fas fa-bell"></i>
+            <div class="badge">3</div>
+          </div>
+          <div class="notification">
+            <i class="fas fa-envelope"></i>
+            <div class="badge">5</div>
+          </div>
+          <div class="user-profile">
+            <div class="profile-img">JD</div>
+            <div class="user-info">
+              <div class="user-name">John Doe</div>
+              <div class="user-role">Administrator</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Main Content -->
+    <div class="main-content" id="mainContent">
+        <div class="dashboard-content">
+        <!-- Dashboard Header -->
+        <div class="dashboard-header">
+          <div>
+            <h1 class="dashboard-title">Overview</h1>
+            <p class="dashboard-subtitle">
+              Sales performance and sales metrics
+            </p>
+          </div>
+  
+          <div style="display: flex">
+            <details class="dropdown">
+              <summary role="button">
+                <a class="button">Fashion</a>
+              </summary>
+              <ul>
+                <li><a href="#">Men</a></li>
+                <li><a href="#">Women</a></li>
+                <li><a href="#">Shirt</a></li>
+                <li><a href="#">Pant</a></li>
+                <li><a href="#">Shoe</a></li>
+            </ul>
+          </details>
+          
+
+            <div class="date-filter">
+                <input type="date" />
+              <span style="margin-left: 10px">▼</span>
+            </div>
+  
+            <div class="filter-button">
+              <span>Apply Filters</span>
+            </div>
+          </div>
+        </div>
+  
+        <!-- Dashboard Grid -->
+        <div class="dashboard-grid">
+          <!-- Quick Stats -->
+          <div class="quick-stats">
+            <div class="stat-card">
+              <div class="stat-icon blue-gradient">👤</div>
+              <div class="stat-title">Total Users</div>
+              <div class="stat-value">175</div>
+              <div class="stat-badge badge-blue">+30 New Additions Today</div>
+            </div>
+  
+            <div class="stat-card">
+              <div class="stat-icon purple-gradient">🛒</div>
+              <div class="stat-title">Total Orders</div>
+              <div class="stat-value">12,500</div>
+              <div class="stat-badge badge-purple">75% Completed</div>
+            </div>
+  
+            <div class="stat-card">
+              <div class="stat-icon green-gradient">💰</div>
+              <div class="stat-title">Monthly Revenue</div>
+              <div class="stat-value">$3,250.00</div>
+              <div class="stat-badge badge-green">+82% vs Last Month</div>
+            </div>
+  
+            <div class="stat-card">
+              <div class="stat-icon orange-gradient">📈</div>
+              <div class="stat-title">Net Profit</div>
+              <div class="stat-value">$42,500</div>
+              <div class="stat-badge badge-orange">+5.2% Growth Rate</div>
+            </div>
+          </div>
+  
+          <!-- Revenue Chart -->
+          <div class="revenue-chart-container">
+            <div class="chart-header">
+              <div class="chart-title">Revenue Distribution</div>
+              <div class="period-tabs">
+                <div class="period-tab">Daily</div>
+                <div class="period-tab">Weekly</div>
+                <div class="period-tab active">Monthly</div>
+                <div class="period-tab">Yearly</div>
+              </div>
+            </div>
+  
+            <div class="revenue-chart">
+              <div class="circular-chart">
+                <div class="donut-chart">
+                  <div class="donut-hole">
+                    <div class="donut-total">$42,500</div>
+                    <div class="donut-label">Total Revenue</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+  
+            <div class="chart-legend">
+              <div class="legend-item">
+                <div class="legend-color" style="background-color: #4169e1"></div>
+                <div>Shirts : $10,625 (25%)</div>
+              </div>
+              <div class="legend-item">
+                <div class="legend-color" style="background-color: #9370db"></div>
+                <div>Pants: $12,750 (30%)</div>
+              </div>
+              <div class="legend-item">
+                <div class="legend-color" style="background-color: #43a047"></div>
+                <div>Shoes: $8,500 (20%)</div>
+              </div>
+              <div class="legend-item">
+                <div class="legend-color" style="background-color: #ff9800"></div>
+                <div>T-shirts: $10,625 (25%)</div>
+              </div>
+            </div>
+          </div>
+  
+          <!-- Performance Container -->
+          <div class="performance-container">
+            <div class="chart-header">
+              <div class="chart-title">Performance Goals</div>
+              <div>📊</div>
+            </div>
+  
+            <div class="goal-progress">
+              <div class="goal-item">
+                <div class="goal-header">
+                  <div class="goal-title">Monthly Orders</div>
+                  <div class="goal-value">2,450 / 3,000</div>
+                </div>
+                <div class="progress-bar">
+                  <div class="progress progress-blue" style="width: 82%"></div>
+                </div>
+              </div>
+  
+              <div class="goal-item">
+                <div class="goal-header">
+                  <div class="goal-title">Customer Satisfaction</div>
+                  <div class="goal-value">4.7 / 5.0</div>
+                </div>
+                <div class="progress-bar">
+                  <div class="progress progress-purple" style="width: 94%"></div>
+                </div>
+              </div>
+  
+              <div class="goal-item">
+                <div class="goal-header">
+                  <div class="goal-title">Revenue Target</div>
+                  <div class="goal-value">$42,500 / $50,000</div>
+                </div>
+                <div class="progress-bar">
+                  <div class="progress progress-green" style="width: 85%"></div>
+                </div>
+              </div>
+            </div>
+  
+            <div
+              style="
+                display: flex;
+                justify-content: space-between;
+                margin-top: 40px;
+              "
+            >
+              <div style="text-align: center; flex: 1">
+                <div style="font-size: 32px; font-weight: 700; color: #4169e1">
+                  32
+                </div>
+                <div style="font-size: 14px; color: #8a94a6">Today's Orders</div>
+              </div>
+  
+              <div style="text-align: center; flex: 1">
+                <div style="font-size: 32px; font-weight: 700; color: #43a047">
+                  28
+                </div>
+                <div style="font-size: 14px; color: #8a94a6">Completed</div>
+              </div>
+  
+              <div style="text-align: center; flex: 1">
+                <div style="font-size: 32px; font-weight: 700; color: #ff9800">
+                  4
+                </div>
+                <div style="font-size: 14px; color: #8a94a6">In Progress</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        </div>
+    </div>
+
+    </div>
+  </body>
+</html>
