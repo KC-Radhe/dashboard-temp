@@ -1,0 +1,75 @@
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 15px;
+}
+.table th, .table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: center;
+}
+.table th {
+  background-color: #34495e;
+  color: white;
+}
+.actions span {
+  cursor: pointer;
+  margin: 0 5px;
+}
+.actions span:hover {
+  color: #e74c3c;
+}
+
+.noone {
+    max-width: 600px;
+    margin: 100px 400px;
+    padding: 20px;
+    background-color: #f4f4f4;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .noone h2 {
+    color: #34495e;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .noone .product-form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .noone .product-form label {
+    margin-bottom: 5px;
+    color: #34495e;
+  }
+  
+  .noone .product-form input,
+  .noone .product-form textarea,
+  .noone .product-form select,
+  .noone .product-form button {
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  
+  .noone .product-form input[type="file"] {
+    border: none;
+  }
+  
+  .noone .product-form button {
+    background-color: #1abc9c;
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+  }
+  
+  .noone .product-form button:hover {
+    background-color: #16a085;
+  }
+  

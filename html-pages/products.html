@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Products Management</title>
+ <link rel="stylesheet" href="../css/products.css">
+</head>
+<body>
+  <div class="dashboard-content">
+    <h3>PRODUCTS MANAGEMENT</h3>
+
+
+    
+    <table class="table">
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Thumbnail</th>
+          <th>Name</th>
+          <th>Category</th>
+          <th>Price</th>
+          <th>Stock</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td>[img]</td>
+          <td>Smart Watch</td>
+          <td>Wearables</td>
+          <td>$199</td>
+          <td>45</td>
+          <td>✏ 🗑</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>[img]</td>
+          <td>Wireless Buds</td>
+          <td>Audio</td>
+          <td>$99</td>
+          <td>120</td>
+          <td>✏ 🗑</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div class="noone">
+        <h2>Add New Product</h2>
+    <form class="product-form">
+        <!-- Product Name -->
+        <label for="productName">Product Name:</label>
+        <input type="text" id="productName" name="productName" required>
+  
+        <!-- Description -->
+        <label for="description">Description:</label>
+        <textarea id="description" name="description" rows="4" required></textarea>
+  
+        <!-- Price -->
+        <label for="price">Price:</label>
+        <input type="number" id="price" name="price" step="0.01" required>
+
+        <!-- stock -->
+        <label for="stock">Stock:</label>
+        <input type="number" id="stock" name="stock" step="0.01" required>
+  
+        <!-- Category -->
+        <label for="category">Category:</label>
+        <select id="category" name="category" required>
+          <option value="">Select Category</option>
+          <option value="Shirts">Shirts</option>
+          <option value="Pants">Pants</option>
+          <option value="Shoes">Shoes</option>
+        </select>
+  
+        <!-- Upload Image -->
+        <label for="uploadImage">Upload Image:</label>
+        <input type="file" id="uploadImage" name="uploadImage" accept="image/*" required>
+  
+        <!-- Submit Button -->
+        <button type="submit">Create Product</button>
+      
+    </form>
+    </div>
+  </div>
+</body>
+</html>
