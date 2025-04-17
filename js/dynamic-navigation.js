@@ -31,8 +31,13 @@
           categories: () => {
             mainContent.innerHTML = '<h3>Categories Management</h3><p>Manage your categories here.</p>';
           },
-          orders: () => {
-            mainContent.innerHTML = '<h3>Order Management</h3><p>Track and manage customer orders here.</p>';
+          orders: async () => {
+            try {
+              const response = await fetch('/html-pages/order.html');
+              mainContent.innerHTML = await response.text();
+            } catch (error) {
+              mainContent.innerHTML = '<p>Error loading dashboard content.</p>';
+            }
           },
           analytics: async () => {
             try {
