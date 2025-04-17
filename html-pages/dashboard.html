@@ -1,104 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Admin Dashboard</title>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="/css/dash.css">
-    <link rel="stylesheet" href="/css/index.css" />
-  </head>
-  <body>
-    <div class="container">
-      <!-- Sidebar -->
-      <div class="sidebar">
-        <div class="logo">
-          <h1>Admin<span>Panel</span></h1>
-        </div>
-        <div class="nav-menu">
-          <div class="menu-heading">Main</div>
-          <div class="nav-item active" onclick="loadContent('dashboard') ">
-            <i class="fas fa-chart-pie"></i>
-            <span>Dashboard</span>
-          </div>
-          <div class="nav-item" onclick="loadContent('users') ">
-            <i class="fas fa-users"></i>
-            <span>Users</span>
-          </div>
-          <div class="nav-item" onclick="loadContent('products') ">
-            <i class="fas fa-box"></i>
-            <span>Products</span>
-          </div>
-          <div class="nav-item" onclick="loadContent('orders') ">
-            <i class="fas fa-shopping-cart"></i>
-            <span>Orders</span>
-          </div>
-
-          <div class="menu-heading">Reports</div>
-          <div class="nav-item" onclick="loadContent('analytics') ">
-            <i class="fas fa-chart-line"></i>
-            <span>Analytics</span>
-          </div>
-          <div class="nav-item" onclick="loadContent('sales') ">
-            <i class="fas fa-coins"></i>
-            <span>Sales</span>
-          </div>
-
-          <div class="menu-heading">Admin</div>
-          <div class="nav-item" onclick="loadContent('settings') ">
-            <i class="fas fa-cog"></i>
-            <span>Settings</span>
-          </div>
-          <div class="nav-item" onclick="loadContent('#') ">
-            <i class="fas fa-bell"></i>
-            <span>Notifications</span>
-          </div>
-          <div class="nav-item">
-            <i class="fas fa-shield-alt"></i>
-            <span>Security</span>
-          </div>
-        </div>
-      </div>
-
-      <!-- Header -->
-      <div class="header">
-        <div class="search-bar">
-          <i class="fas fa-search"></i>
-          <input type="text" placeholder="Search..." />
-        </div>
-        <div class="header-actions">
-          <div class="notification">
-            <i class="fas fa-bell"></i>
-            <div class="badge">3</div>
-          </div>
-          <div class="notification">
-            <i class="fas fa-envelope"></i>
-            <div class="badge">5</div>
-          </div>
-          <div class="user-profile">
-            <div class="profile-img">JD</div>
-            <div class="user-info">
-              <div class="user-name">John Doe</div>
-              <div class="user-role">Administrator</div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Main Content -->
-    <div class="main-content" id="mainContent">
-        <div class="dashboard-content">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/dash.css">
+    <link rel="stylesheet" href="../css/index.css" />
+</head>
+<body>
+    <div class="dashboard-content">
         <!-- Dashboard Header -->
         <div class="dashboard-header">
           <div>
@@ -279,11 +189,6 @@
             </div>
           </div>
         </div>
-        </div>
-    </div>
-
-    </div>
-    <script src="/js/dynamic-navigation.js"></script>
-    
-  </body>
+      </div>
+</body>
 </html>
